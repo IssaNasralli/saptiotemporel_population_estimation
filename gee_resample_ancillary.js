@@ -34,8 +34,8 @@ var datasets = [
 
 var region = 'tunisia';
 
-// Loop through years from 2015 to 2020
-for (var year = 2016; year <= 2020; year++) {
+// Loop through years from 2015 to 2019
+for (var year = 2016; year <= 2019; year++) {
   // Iterate through the datasets and apply the resampling and exporting process
   for (var i = 0; i < datasets.length; i++) {
     var datasetName = datasets[i];
