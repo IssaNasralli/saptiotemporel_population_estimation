@@ -14,5 +14,5 @@ The objective of this project is to accurately estimate population distribution 
   - Dynamic World V1 for Land Use/Land Cover (LULC) data (Resolution: 10 meters)
   - VIIRS Nighttime Day/Night Band for night-time light composites (Resolution: 463.83 meters)
   - ERA5 (ECMWF) for climate data, including temperature and precipitation (Resolution: 27830 meters)
-  - Ancillary data resampled through Google Earth Engine (gee_resample_ancillary.js):
+- Ancillary data resampled through Google Earth Engine (gee_resample_ancillary.js):
 
