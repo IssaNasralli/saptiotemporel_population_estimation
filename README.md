@@ -18,5 +18,6 @@ The objective of this project is to accurately estimate population distribution 
   - VIIRS Nighttime Day/Night Band for night-time light composites (Resolution: 463.83 meters)
   - ERA5 (ECMWF) for climate data, including temperature and precipitation (Resolution: 27830 meters)
 - Ancillary data resampled through Google Earth Engine : gee_resample_ancillary.js
-- Ancillary data CRS and datum checked through Google Earth Engine : gee_crs_datum_ancillary.js
+- Checking ancillary data CRS and datum  through Google Earth Engine : gee_crs_datum_ancillary.js
+- Stacking ancillary data  through Google Earth Engine : gee_stack_ancillary.js
 
