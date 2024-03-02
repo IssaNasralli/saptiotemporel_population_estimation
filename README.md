@@ -9,7 +9,7 @@ The objective of this project is to accurately estimate population distribution 
 ## Data Sources
 - Population estimates from the National Institute of Statistics (INS) for the years 2015 and 2019
 - Landscan Global Population Database
-- Ancillary data obtained through Google Earth Engine (GEE):
+- Ancillary data obtained through Google Earth Engine (gee_obtained_ancillary.js):
   - MCD43A4.061 (MODIS) for RGB imagery (Resolution: 500 meters)
   - Dynamic World V1 for Land Use/Land Cover (LULC) data (Resolution: 10 meters)
   - VIIRS Nighttime Day/Night Band for night-time light composites (Resolution: 463.83 meters)
