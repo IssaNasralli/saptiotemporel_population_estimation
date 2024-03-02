@@ -10,7 +10,7 @@ The objective of this project is to accurately estimate population distribution 
 ### Pupulation Data 
 - Landscan Global Population Database
 - Population estimates from the National Institute of Statistics (INS) for the years 2015 and 2019
-  WSF datasets assembled then resampled then clipped:gee_assemblage_WSF2015_tiles.js 
+  WSF datasets assembled then resampled then clipped through Google Earth Engine :gee_assemblage_WSF2015_tiles.js 
 ### Ancillary Data 
 - Ancillary data obtained through Google Earth Engine : gee_obtained_ancillary.js
   - MCD43A4.061 (MODIS) for RGB imagery (Resolution: 500 meters)
@@ -18,5 +18,5 @@ The objective of this project is to accurately estimate population distribution 
   - VIIRS Nighttime Day/Night Band for night-time light composites (Resolution: 463.83 meters)
   - ERA5 (ECMWF) for climate data, including temperature and precipitation (Resolution: 27830 meters)
 - Ancillary data resampled through Google Earth Engine : gee_resample_ancillary.js
-- Ancillary data CRS and datum checked : gee_crs_datum_ancillary.js
+- Ancillary data CRS and datum checked through Google Earth Engine : gee_crs_datum_ancillary.js
 
