@@ -41,18 +41,6 @@ var CollectMODISForRegionAndYear = function(regionName, level, admName, startYea
       max: 4000.0,
       gamma: 1.4,
     };
-
-    // Set map center and add layer to the map
-    Map.centerObject(roi, 6); // Center the map on the ROI and set zoom level
-    Map.addLayer(dataset, trueColorVis, 'MODIS True Color - ' + regionName + ' ' + year); // Set last parameter to false to indicate no stretching
-    Map.addLayer(roi, { color: 'FF0000' }, 'Region of Interest'); // Add ROI to the map
-
-
-
-    if (regionName === 'Sfax') {
-      regionName = 'sfax';
-    }
-    
     // Export the result to Google Earth Engine asset
     Export.image.toAsset({
       image: dataset.median(),
@@ -65,7 +53,6 @@ var CollectMODISForRegionAndYear = function(regionName, level, admName, startYea
     });
   }
 };
-
  CollectMODISForRegionAndYear('Tunisia', 'level0', 'ADM0_NAME', 2015, 2019);
 ```
   - Dynamic World V1 for Land Use/Land Cover (LULC) data (Resolution: 10 meters)
