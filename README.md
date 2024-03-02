@@ -8,9 +8,9 @@ The objective of this project is to accurately estimate population distribution 
 
 ## Data Sources
 ### Pupulation Data 
-
-- Population estimates from the National Institute of Statistics (INS) for the years 2015 and 2019
 - Landscan Global Population Database
+- Population estimates from the National Institute of Statistics (INS) for the years 2015 and 2019
+  WSF datasets assembled then resampled then clipped:gee_assemblage_WSF2015_tiles.js 
 ### Ancillary Data 
 - Ancillary data obtained through Google Earth Engine (gee_obtained_ancillary.js):
   - MCD43A4.061 (MODIS) for RGB imagery (Resolution: 500 meters)
