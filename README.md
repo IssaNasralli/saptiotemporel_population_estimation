@@ -7,8 +7,11 @@ This repository contains the code and documentation for a population estimation 
 The objective of this project is to accurately estimate population distribution and density at a fine spatial resolution using remote sensing data and advanced machine learning algorithms.
 
 ## Data Sources
+### Pupulation Data 
+
 - Population estimates from the National Institute of Statistics (INS) for the years 2015 and 2019
 - Landscan Global Population Database
+### Ancillary Data 
 - Ancillary data obtained through Google Earth Engine (gee_obtained_ancillary.js):
   - MCD43A4.061 (MODIS) for RGB imagery (Resolution: 500 meters)
   - Dynamic World V1 for Land Use/Land Cover (LULC) data (Resolution: 10 meters)
