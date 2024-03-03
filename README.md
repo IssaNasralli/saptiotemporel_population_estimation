@@ -10,10 +10,13 @@ The objective of this project is to accurately estimate population distribution 
 ### Pupulation Data 
 - Landscan Global Population Database
 - Population estimates from the National Institute of Statistics (INS) for the years 2015 and 2019
-  WSF datasets assembled then resampled then clipped through Google Earth Engine :gee_assemblage_WSF2015_tiles.js
+  WSF datasets assembled then resampled then clipped through Google Earth Engine to obtain WSF_dataset_15.tiff and WSF_dataset_19.tiff :gee_assemblage_WSF2015_tiles.js
   Pixels of WSF datasets are standarized by Raster Calculator tool of ArcGIS : pixels with values less than 127 were reassigned a value of 0, while pixels with values greater than 127 were reassigned a value of 1   indicating building presence:
-   - Condition 1 to obtain the raster data WSF_dataset_127 :  Con("WSF_dataset" < 127, 0, "WSF_dataset")
-   - Condition 2 to obtain the raster data WSF_dataset_127_binary :  Con("WSF_dataset_127" !=0, 1, "WSF_dataset_127")
+   - Condition 1_15 to obtain the raster data WSF_dataset_15_127 :  Con("WSF_dataset_15" < 127, 0, "WSF_dataset_15")
+   - Condition 2_15 to obtain the raster data WSF_dataset_15_127_binary :  Con("WSF_dataset_15_127" !=0, 1, "WSF_dataset_15_127")
+     
+   - Condition 1_19 to obtain the raster data WSF_dataset_19_127 :  Con("WSF_dataset_19" < 127, 0, "WSF_dataset_19")
+   - Condition 2_19 to obtain the raster data WSF_dataset_19_127_binary :  Con("WSF_dataset_19_127" !=0, 1, "WSF_dataset_19_127")
 
 ### Ancillary Data 
 - Ancillary data obtained through Google Earth Engine : gee_obtained_ancillary.js
