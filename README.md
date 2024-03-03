@@ -18,7 +18,8 @@ The objective of this project is to accurately estimate population distribution 
      
      - Condition 1_19 to obtain the raster data WSF_dataset_19_127 :  Con("WSF_dataset_19" < 127, 0, "WSF_dataset_19")
      - Condition 2_19 to obtain the raster data WSF_dataset_19_127_binary :  Con("WSF_dataset_19_127" !=0, 1, "WSF_dataset_19_127")
-  - WSF BuildingVolume datasets (WSF3D_V02_BuildingVolume.tif) is clipped (ArcGIS_Clipped_WSF3D_Building_Volume.py) e
+  - WSF BuildingVolume datasets (WSF3D_V02_BuildingVolume.tif) is clipped (ArcGIS_Clipped_WSF3D_Building_Volume.py) by ArcGIS then resampled (gee_resampled_Clipped_WSF3D_Building_Volume.js) by GEE. After those processes, each pixel represents the estimated number of floor.
+  - Computing weighting or ponderation of the dasymetric mapping layer: ArchGIS_Weighted_WSFD_V02_BuildingVolume.py
 
 ### Ancillary Data 
 - Ancillary data obtained through Google Earth Engine : gee_obtained_ancillary.js
